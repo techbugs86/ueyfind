@@ -59,7 +59,7 @@ export default function HowItWorks() {
 
           {/* Card 4 - Quick Results (pink, phone left / text right) */}
           <Card tone="coral" className="flex items-end gap-2 sm:gap-5 lg:col-span-5">
-            <Phone src="/frame4.png" alt="Quick results screen" className="w-[42%] max-w-[200px]" />
+            <Phone src="/frame4.png" alt="Quick results screen" className="max-w-[550px]  " />
             <div className="flex-1" style={{ paddingBottom: "80px", paddingLeft: "47px", paddingRight: "50px" }}>
               <h3 className="font-poppins leading-tight text-brand-coral " style={{ fontSize: "53.33px" }}>
                 Quick
