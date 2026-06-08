@@ -18,6 +18,10 @@ type Review = {
 /* every card shares the first review's width; text wraps inside it */
 const CARD_WIDTH = "23.2%";
 
+/* mobile scatter: per-card tilt (deg) + horizontal nudge, cycled by index */
+const M_TILT = [-7, 9, -8, 7, -6, 8];
+const M_SHIFT = ["0%", "8%", "-4%", "6%", "2%", "-6%"];
+
 const REVIEWS: Review[] = [
   {
     img: "/Rectangle13(5).png",
@@ -132,11 +136,17 @@ const REVIEWS: Review[] = [
 export default function Reviews() {
   return (
     <section id="faqs" className="relative overflow-hidden bg-white">
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[1000px] w-[1000px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-brand-coral/5" />
+      {/* faint concentric circle lines in the back */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[140vw] max-w-[1400px] -translate-x-1/2 -translate-y-1/2 lg:w-[1000px]">
+        <div className="absolute inset-0 rounded-full border border-brand-coral/[0.07]" />
+        <div className="absolute inset-[12%] rounded-full border border-brand-deep/[0.06]" />
+        <div className="absolute inset-[24%] rounded-full border border-brand-coral/[0.05]" />
+        <div className="absolute inset-[36%] rounded-full border border-brand-deep/[0.04]" />
+      </div>
 
-      <div className="relative mx-auto max-w-[1920px] px-6">
+      <div className="relative mx-auto max-w-[1920px] px-5 py-16 sm:px-6 sm:py-20 lg:py-0">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-poppins text-3xl font-bold text-brand-deep sm:text-4xl lg:text-[56px] lg:leading-[64px]">
+          <h2 className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3.4vw,3.5rem)] leading-tight">
             Reviews From Our Users
           </h2>
           <p className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
@@ -146,11 +156,24 @@ export default function Reviews() {
           </p>
         </div>
 
-        {/* Mobile / tablet: simple stacked grid */}
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:hidden">
-          {REVIEWS.map((r, i) => (
-            <ReviewCard key={i} review={r} />
-          ))}
+        {/* Mobile / tablet: scattered tilted stack matching the design */}
+        <div className="relative z-10 mx-auto mt-10 flex max-w-md flex-col lg:hidden">
+          {REVIEWS.map((r, i) => {
+            const rot = M_TILT[i % M_TILT.length];
+            const shift = M_SHIFT[i % M_SHIFT.length];
+            return (
+              <div
+                key={i}
+                className="w-[100%] mt-3 first:mt-0"
+                style={{
+                  transform: `rotate(${rot}deg) translateX(${shift})`,
+                  marginLeft: i % 2 === 0 ? "0" : "auto",
+                }}
+              >
+                <ReviewCard review={r} />
+              </div>
+            );
+          })}
         </div>
 
         {/* Desktop: scattered absolute layout matching the design canvas */}
@@ -201,7 +224,7 @@ function ReviewCard({ review }: { review: Review }) {
               <Star key={i} />
             ))}
           </div>
-          <p className="mt-2 font-poppins text-sm leading-relaxed text-[#6A6A6A]" style={{ fontSize: "27px" }}>
+          <p className="mt-2 font-poppins leading-relaxed text-[#6A6A6A] text-[clamp(0.875rem,1.4vw,1.6875rem)]">
             {review.text}
           </p>
         </div>
@@ -233,7 +256,7 @@ function ReviewCard({ review }: { review: Review }) {
           </div>
         </div>
       </div>
-      <p className="mt-4 font-poppins text-sm leading-relaxed text-[#6A6A6A]" style={{ fontSize: "27px" }}>
+      <p className="mt-4 font-poppins leading-relaxed text-[#6A6A6A] text-[clamp(0.875rem,1.4vw,1.6875rem)]">
         {review.text}
       </p>
     </div>

@@ -42,16 +42,117 @@ const AVATARS: { img: string; left: string; top: string; size: string }[] = [
   { img: "/Ellipse227.png", left: "102.8%", top: "83%", size: "w-[17%]" },
 ];
 
+/* mobile/tablet scatter — own coordinate set, % of a tall canvas (Mobile 375.svg) */
+type MobBubble = Bubble & { side: "left" | "right" };
+const M_BUBBLES: MobBubble[] = [
+  {
+    img: "/Ellipse225.png",
+    name: "John Alex",
+    text: "Hey Wherezat, Store this charger in the bedroom drawer.",
+    left: "6%",
+    top: "9%",
+    side: "left",
+  },
+  {
+    img: "/Ellipse223.png",
+    name: "Talon Bhiel Madsen",
+    text: "Hey Wherezat, Put the extra ketchup in the kitchen cabinet.",
+    left: "38%",
+    top: "74%",
+    side: "right",
+  },
+  {
+    img: "/Ellipse226.png",
+    name: "Desirae Lubin",
+    text: "Hey Wherezat, I kept the gate batteries in the living room shelf drawer.",
+    left: "6%",
+    top: "92%",
+    side: "left",
+  },
+];
+
+const M_AVATARS: { img: string; left: string; top: string }[] = [
+  { img: "/Ellipse227.png", left: "82%", top: "4%" },
+  { img: "/Ellipse224.png", left: "13%", top: "35%" },
+];
+
 export default function ChatBubbles() {
   return (
-    <section id="about" className="relative overflow-hidden bg-white py-16 lg:py-24" style={{ paddingTop: "325px", paddingBottom: "325px" }}>
+    <section id="about" className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-[325px]">
       {/* blurred glow blobs (Group 3.svg) */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-[32%] top-[34%] h-[55vw] w-[55vw] max-h-[700px] max-w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F16D68] opacity-40 blur-[140px]" />
         <div className="absolute left-[68%] top-[49%] h-[55vw] w-[55vw] max-h-[700px] max-w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8FECD9] opacity-50 blur-[140px]" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      {/* Mobile / tablet: scattered layout matching Mobile 375.svg */}
+      <div className="relative mx-auto max-w-md px-4 lg:hidden">
+        {/* concentric circles behind everything */}
+        <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[150%] -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute inset-0 rounded-full border border-brand-dark/[0.06]" />
+          <div className="absolute inset-[14%] rounded-full border border-brand-dark/[0.05]" />
+          <div className="absolute inset-[28%] rounded-full border border-brand-dark/[0.04]" />
+        </div>
+
+        {/* tall canvas holding the scatter */}
+        <div className="relative mx-auto aspect-[375/700] w-full">
+          {/* center heading */}
+          <div className="absolute inset-x-[4%] top-1/2 z-30 -translate-y-1/2 text-center">
+            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(1.5rem,6.5vw,2.25rem)]">
+              <span className="text-brand-coral">Your life,</span> organized
+              effortlessly because AI tracks everything you tell it.
+            </h2>
+          </div>
+
+          {/* lone avatars */}
+          {M_AVATARS.map((a, i) => (
+            <div
+              key={`mav-${i}`}
+              style={{ left: a.left, top: a.top }}
+              className="absolute z-10 aspect-square w-[15%] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full ring-4 ring-white shadow-lg"
+            >
+              <Image
+                src={a.img}
+                alt=""
+                width={96}
+                height={96}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ))}
+
+          {/* avatar + card bubbles */}
+          {M_BUBBLES.map((b) => (
+            <div
+              key={`mb-${b.name}`}
+              style={{ left: b.left, top: b.top }}
+              className={`absolute z-20 flex w-[62%] -translate-y-1/2 items-start gap-2 ${
+                b.side === "right" ? "flex-row-reverse" : ""
+              }`}
+            >
+              <div className="aspect-square w-[28%] shrink-0 overflow-hidden rounded-full ring-4 ring-white shadow-lg">
+                <Image
+                  src={b.img}
+                  alt={b.name}
+                  width={96}
+                  height={96}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="flex-1 rounded-[16px] border border-brand-mint/50 bg-[#EAF8F4]/90 px-3 py-2 text-left shadow-sm backdrop-blur-sm">
+                <p className="font-poppins text-xs font-semibold text-brand-deep">
+                  {b.name}
+                </p>
+                <p className="mt-0.5 font-poppins text-[10px] leading-snug text-brand-deep/80">
+                  {b.text}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="relative mx-auto hidden max-w-6xl px-6 lg:block">
         {/* faint concentric circles behind everything */}
         <div className="pointer-events-none absolute left-1/2 top-1/2 h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2">
           <div className="absolute inset-[-42%] rounded-full border border-brand-dark/[0.06]" />
@@ -62,7 +163,7 @@ export default function ChatBubbles() {
         <div className="relative mx-auto aspect-[1920/1430] w-full">
           {/* center heading */}
           <div className="absolute inset-[-36%] flex items-center justify-center px-4 text-center" style={{ marginRight: "250px", marginLeft: "250px" }}>
-            <h2 className="font-poppins font-bold leading-snug text-brand-deep" style={{ fontSize: "85.33px" }}>
+            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(3rem,4.4vw,5.33rem)]">
               <span className="text-brand-coral">Your life,</span> organized
               effortlessly because AI tracks everything you tell it.
             </h2>

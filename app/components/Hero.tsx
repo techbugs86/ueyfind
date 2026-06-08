@@ -4,14 +4,14 @@ const FLOATING = [
   { src: "/Toolbox1.png", alt: "toolbox", className: "left-[-18%] top-[11%] w-[24%] -rotate-12" },
   { src: "/Christmas1.png", alt: "ornament", className: "left-[5%] bottom-[7%] w-[24%] rotate-6" },
   { src: "/Watch1.png", alt: "watch", className: "right-[-1%] top-[21%] w-[24%] rotate-12" },
-  { src: "/Accumulator1.png", alt: "battery", className: "right-[-16%] top-[85%] w-[24%] -rotate-6"},
+  { src: "/Accumulator1.png", alt: "battery", className: "right-[-13%] top-[73%] w-[24%] -rotate-6"},
 ];
 
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-brand-dark pt-32 pb-20 text-center sm:pt-36"
+      className="relative overflow-hidden bg-brand-dark pt-28 pb-0 text-center sm:pt-32 lg:pt-36"
     >
       {/* background image + overlays */}
       <div className="pointer-events-none absolute inset-0">
@@ -25,14 +25,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-brand-dark/60 via-brand-dark/80 to-brand-dark" />
       </div>
 
-      <div className="relative z-10 mx-auto flex flex-col items-center gap-6 px-6" style={{ marginTop: "70px"}}>
-        <h1 className="font-poppins font-bold leading-tight text-white sm:text-5xl" style={{ fontSize: "85.33px" }}>
+      <div className="relative z-10 mx-auto mt-10 flex max-w-5xl flex-col items-center gap-5 px-5 sm:mt-14 sm:gap-6 lg:mt-[70px]">
+        <h1 className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,6vw,5.33rem)]">
           Never Lose Track Again
           <br />
           Just Ask Wherezat
         </h1>
 
-        <p className="max-w-4xl font-poppins font-light text-white/85 sm:text-lg" style={{ fontSize: "24px" }}> 
+        <p className="max-w-4xl font-poppins font-light text-white/85 text-[clamp(1rem,1.6vw,1.5rem)]">
           Wherezat is your AI-first voice assistant that helps you store and
           retrieve anything in seconds. Just speak, and let Wherezat remember for
           you—never lose track of your important items again
@@ -45,9 +45,9 @@ export default function Hero() {
       </div>
 
       {/* phone + glow */}
-      <div className="relative z-10 mx-auto mt-12 flex w-full max-w-3xl items-end justify-center">
+      <div className="relative z-10 mx-auto mt-10 flex w-[78%] max-w-3xl items-end justify-center sm:mt-12 lg:-mb-px">
         {/* glow */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral/20 blur-3xl" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vw] max-h-[420px] w-[60vw] max-w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral/20 blur-3xl" />
 
         {FLOATING.map((f) => (
           <Image
@@ -66,8 +66,7 @@ export default function Hero() {
           width={340}
           height={690}
           priority
-          className="relative z-10 h-auto w-[260px] sm:w-[800px]"
-          style={{ top: "80px" }}
+          className="relative z-10 h-auto w-full max-w-[800px]"
         />
       </div>
     </section>
