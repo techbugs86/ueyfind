@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer id="privacy" className="relative bg-brand-dark pb-[117px]">
+    <footer id="privacy" className="relative bg-brand-dark lg:pb-[117px]">
       <div className="mx-auto max-w-[1920px] px-6 lg:px-[106px]" style={{ paddingTop: "85px" }}>
         {/* Community CTA */}
         <div className="mt-[60px] rounded-[24px] bg-brand-teal px-8 py-12 lg:mt-[40px] lg:rounded-[38px] lg:px-[81px] lg:py-[100px]">
@@ -55,7 +55,7 @@ export default function Footer() {
               alt="UeyFind"
               width={92}
               height={92}
-              className="h-[60px] lg:h-[85px]"
+              className="h-[90px] lg:h-[85px]"
             />
             <p className="font-poppins text-xl font-semibold leading-snug text-white lg:text-[32px] lg:leading-[48px]">
               Stop Forgetting. Start Asking.
@@ -103,8 +103,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom strip */}
-      <div className="absolute inset-x-0 bottom-0 h-[117px] bg-brand-mint">
-        <div className="mx-auto flex h-full max-w-[1920px] flex-col items-center justify-between gap-4 px-6 py-8 sm:flex-row lg:px-[106px]">
+      <div className="relative inset-x-0 bottom-0 bg-brand-mint lg:absolute lg:h-[117px]">
+        <div className="mx-auto flex h-full max-w-[1920px] flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row sm:py-8 lg:px-[106px]">
           <p className="font-poppins text-sm text-brand-dark lg:text-[18px] lg:leading-7">
             © 2026 Wherezat. All rights reserved.
           </p>

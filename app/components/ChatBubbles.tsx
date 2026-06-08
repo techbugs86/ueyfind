@@ -78,7 +78,7 @@ const M_AVATARS: { img: string; left: string; top: string }[] = [
 
 export default function ChatBubbles() {
   return (
-    <section id="about" className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-[325px]">
+    <section id="about" className="relative overflow-hidden bg-white py-12 sm:py-20 lg:py-[clamp(120px,14vw,325px)]">
       {/* blurred glow blobs (Group 3.svg) */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute left-[32%] top-[34%] h-[55vw] w-[55vw] max-h-[700px] max-w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F16D68] opacity-40 blur-[140px]" />
@@ -152,9 +152,9 @@ export default function ChatBubbles() {
         </div>
       </div>
 
-      <div className="relative mx-auto hidden max-w-6xl px-6 lg:block">
+      <div className="relative mx-auto hidden w-full max-w-6xl px-6 lg:block">
         {/* faint concentric circles behind everything */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[820px] w-[820px] -translate-x-1/2 -translate-y-1/2">
+        <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[88%] -translate-x-1/2 -translate-y-1/2">
           <div className="absolute inset-[-42%] rounded-full border border-brand-dark/[0.06]" />
           <div className="absolute inset-[-19%] rounded-full border border-brand-dark/[0.05]" />
           <div className="absolute inset-[4%] rounded-full border border-brand-dark/[0.04]" />
@@ -162,7 +162,7 @@ export default function ChatBubbles() {
 
         <div className="relative mx-auto aspect-[1920/1430] w-full">
           {/* center heading */}
-          <div className="absolute inset-[-36%] flex items-center justify-center px-4 text-center" style={{ marginRight: "250px", marginLeft: "250px" }}>
+          <div className="absolute inset-[-36%] mx-[22%] flex items-center justify-center px-4 text-center">
             <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(3rem,4.4vw,5.33rem)]">
               <span className="text-brand-coral">Your life,</span> organized
               effortlessly because AI tracks everything you tell it.
