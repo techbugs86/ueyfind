@@ -17,9 +17,9 @@ export default function HowItWorks() {
 
         <div className="mt-10 grid gap-6 sm:mt-14 lg:grid-cols-8">
           {/* Card 1 - Speak to Save or Find (pink, phone left / text right) */}
-          <Card tone="coral" className="flex flex-col items-center gap-4 text-center sm:flex-row sm:items-end sm:gap-5 sm:text-left lg:col-span-5">
-            <Phone src="/frame1.png" alt="Speak to save or find screen" className="max-w-[280px] sm:max-w-[600px]" />
-            <div className="flex-1 pb-6 sm:pb-12 lg:pb-20 sm:px-4 lg:pl-[47px] lg:pr-[50px]">
+          <Card tone="coral" className="flex flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left lg:col-span-5">
+            <Phone src="/frame1.png" alt="Speak to save or find screen" className="max-w-[280px] sm:max-w-[360px] lg:max-w-[600px]" />
+            <div className="flex-1 pb-6 lg:pb-20 lg:pl-[47px] lg:pr-[50px]">
               <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4vw,3.33rem)]">
                 Speak to
                 <br />
@@ -58,9 +58,9 @@ export default function HowItWorks() {
           </Card>
 
           {/* Card 4 - Quick Results (pink, phone left / text right) */}
-          <Card tone="coral" className="flex flex-col items-center gap-4 text-center sm:flex-row sm:items-end sm:gap-5 sm:text-left lg:col-span-5">
-            <Phone src="/frame4.png" alt="Quick results screen" className="max-w-[280px] sm:max-w-[550px]" />
-            <div className="flex-1 pb-6 sm:pb-12 lg:pb-20 sm:px-4 lg:pl-[47px] lg:pr-[50px]">
+          <Card tone="coral" className="flex flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left lg:col-span-5">
+            <Phone src="/frame4.png" alt="Quick results screen" className="max-w-[280px] sm:max-w-[360px] lg:max-w-[550px]" />
+            <div className="flex-1 pb-6 lg:pb-20 lg:pl-[47px] lg:pr-[50px]">
               <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4vw,3.33rem)]">
                 Quick
                 <br />

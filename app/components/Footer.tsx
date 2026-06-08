@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="mx-auto max-w-[1920px] px-6 lg:px-[106px]" style={{ paddingTop: "85px" }}>
         {/* Community CTA */}
         <div className="mt-[60px] rounded-[24px] bg-brand-teal px-8 py-12 lg:mt-[40px] lg:rounded-[38px] lg:px-[81px] lg:py-[100px]">
-          <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-[166px]">
-            <div className="flex flex-col gap-5 lg:w-[713px] lg:gap-[21px]">
-              <h2 className="font-poppins text-4xl font-semibold leading-tight text-white lg:text-[64px] lg:leading-[96px]">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-12 xl:gap-[166px]">
+            <div className="flex flex-col gap-5 lg:flex-1 lg:gap-[21px] xl:w-[713px] xl:flex-none">
+              <h2 className="font-poppins font-semibold leading-tight text-white text-[clamp(2rem,3.6vw,4rem)] xl:leading-[96px]">
                 Join the UeyFind
                 <br />
                 Community Updates
@@ -20,12 +20,12 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 lg:w-[640px] lg:gap-[14px]">
+            <div className="flex flex-col gap-3 lg:flex-1 lg:gap-[14px] xl:w-[640px] xl:flex-none">
               <p className="font-poppins text-lg font-medium text-white lg:text-[26px] lg:leading-10">
                 Stay Connected
               </p>
-              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
-                <div className="flex flex-1 items-center gap-3 rounded-[44px] bg-white px-6 py-4 lg:h-[80px] lg:rounded-[88px] lg:px-8">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 lg:gap-4">
+                <div className="flex min-w-0 flex-1 items-center gap-3 rounded-[44px] bg-white px-6 py-4 lg:h-[80px] lg:rounded-[88px] lg:px-8">
                   <span className="shrink-0 text-brand-deep">
                     <UserIcon />
                   </span>
@@ -35,7 +35,7 @@ export default function Footer() {
                     className="w-full bg-transparent font-poppins text-sm text-brand-deep outline-none placeholder:text-brand-deep lg:text-lg lg:leading-[27px]"
                   />
                 </div>
-                <button className="shrink-0 rounded-[44px] bg-gradient-to-r from-brand-coral-soft to-brand-coral px-10 py-4 font-poppins text-sm font-medium text-white transition-transform hover:scale-105 lg:h-[80px] lg:rounded-[93px] lg:text-lg lg:leading-[27px]">
+                <button className="shrink-0 whitespace-nowrap rounded-[44px] bg-gradient-to-r from-brand-coral-soft to-brand-coral px-8 py-4 font-poppins text-sm font-medium text-white transition-transform hover:scale-105 sm:px-10 lg:h-[80px] lg:rounded-[93px] lg:text-lg lg:leading-[27px]">
                   Try Now
                 </button>
               </div>
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* Footer body */}
-        <div className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-[513px] mb-[100px]">
+        <div className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-16 xl:gap-[513px] mb-[100px]">
           {/* Logo and Text */}
           <div className="flex flex-col gap-5 lg:gap-[21px]">
             <Image

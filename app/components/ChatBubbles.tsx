@@ -153,7 +153,7 @@ export default function ChatBubbles() {
       </div>
 
       <div className="relative mx-auto hidden w-full max-w-6xl px-6 lg:block">
-        <div className="relative mx-auto aspect-[1920/1430] w-full max-w-[min(760px,62vw)]">
+        <div className="relative mx-auto aspect-[1920/1430] w-full max-w-[min(1040px,64vw)]">
           {/* faint concentric circles behind everything (sized off the canvas) */}
           <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[112%] -translate-x-1/2 -translate-y-1/2">
             <div className="absolute inset-[-42%] rounded-full border border-brand-dark/[0.06]" />
@@ -192,7 +192,7 @@ export default function ChatBubbles() {
             <div
               key={b.name}
               style={{ left: b.left, top: b.top }}
-              className="absolute z-20 flex aspect-[364/111] w-[32%] items-center"
+              className="absolute z-20 flex aspect-[364/111] w-[24%] items-center"
             >
               <Image
                 src="/bubble.svg"
