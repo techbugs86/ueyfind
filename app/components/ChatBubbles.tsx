@@ -153,17 +153,17 @@ export default function ChatBubbles() {
       </div>
 
       <div className="relative mx-auto hidden w-full max-w-6xl px-6 lg:block">
-        {/* faint concentric circles behind everything */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[88%] -translate-x-1/2 -translate-y-1/2">
-          <div className="absolute inset-[-42%] rounded-full border border-brand-dark/[0.06]" />
-          <div className="absolute inset-[-19%] rounded-full border border-brand-dark/[0.05]" />
-          <div className="absolute inset-[4%] rounded-full border border-brand-dark/[0.04]" />
-        </div>
+        <div className="relative mx-auto aspect-[1920/1430] w-full max-w-[min(760px,62vw)]">
+          {/* faint concentric circles behind everything (sized off the canvas) */}
+          <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[112%] -translate-x-1/2 -translate-y-1/2">
+            <div className="absolute inset-[-42%] rounded-full border border-brand-dark/[0.06]" />
+            <div className="absolute inset-[-19%] rounded-full border border-brand-dark/[0.05]" />
+            <div className="absolute inset-[4%] rounded-full border border-brand-dark/[0.04]" />
+          </div>
 
-        <div className="relative mx-auto aspect-[1920/1430] w-full">
           {/* center heading */}
-          <div className="absolute inset-[-36%] mx-[22%] flex items-center justify-center px-4 text-center">
-            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(3rem,4.4vw,5.33rem)]">
+          <div className="absolute inset-[-36%] mx-[18%] flex items-center justify-center px-4 text-center">
+            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(2.25rem,3.4vw,5.33rem)]">
               <span className="text-brand-coral">Your life,</span> organized
               effortlessly because AI tracks everything you tell it.
             </h2>
@@ -192,7 +192,7 @@ export default function ChatBubbles() {
             <div
               key={b.name}
               style={{ left: b.left, top: b.top }}
-              className="absolute z-20 flex aspect-[364/111] w-[24%] min-w-[260px] items-center"
+              className="absolute z-20 flex aspect-[364/111] w-[32%] items-center"
             >
               <Image
                 src="/bubble.svg"
@@ -201,11 +201,11 @@ export default function ChatBubbles() {
                 aria-hidden
                 className="absolute inset-0 -z-10 h-full w-full"
               />
-              <div className="px-[9%] text-left py-2.5">
-                <p className="font-poppins text-base font-semibold text-brand-deep">
+              <div className="px-[9%] py-2.5 text-left">
+                <p className="font-poppins font-semibold text-brand-deep text-[clamp(0.7rem,1vw,1rem)]">
                   {b.name}
                 </p>
-                <p className="mt-0.5 font-poppins text-xs leading-snug text-brand-deep/80">
+                <p className="mt-0.5 font-poppins leading-snug text-brand-deep/80 text-[clamp(0.55rem,0.85vw,0.85rem)]">
                   {b.text}
                 </p>
               </div>
