@@ -29,12 +29,12 @@ export default function Hero() {
         <h1 className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,6vw,5.33rem)]">
           Never Lose Track Again
           <br />
-          Just Ask Wherezat
+          Just Ask UeyFind
         </h1>
 
         <p className="max-w-4xl font-poppins font-light text-white/85 text-[clamp(1rem,1.6vw,1.5rem)]">
-          Wherezat is your AI-first voice assistant that helps you store and
-          retrieve anything in seconds. Just speak, and let Wherezat remember for
+          UeyFind is your AI-first voice assistant that helps you store and
+          retrieve anything in seconds. Just speak, and let UeyFind remember for
           you—never lose track of your important items again
         </p>
 
@@ -62,7 +62,7 @@ export default function Hero() {
 
         <Image
           src="/mockup.png"
-          alt="Wherezat app on iPhone"
+          alt="UeyFind app on iPhone"
           width={340}
           height={690}
           priority

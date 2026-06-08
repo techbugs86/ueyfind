@@ -9,13 +9,13 @@ export default function Footer() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-[166px]">
             <div className="flex flex-col gap-5 lg:w-[713px] lg:gap-[21px]">
               <h2 className="font-poppins text-4xl font-semibold leading-tight text-white lg:text-[64px] lg:leading-[96px]">
-                Join the Wherezat
+                Join the UeyFind
                 <br />
                 Community Updates
               </h2>
               <p className="font-poppins text-base font-light leading-relaxed text-white lg:text-2xl lg:leading-9">
                 Stay connected with the latest features, updates, and announcements
-                from Wherezat. Be the first to know what&apos;s new and never miss an
+                from UeyFind. Be the first to know what&apos;s new and never miss an
                 upgrade to your experience.
               </p>
             </div>
@@ -60,10 +60,10 @@ export default function Footer() {
             <p className="font-poppins text-xl font-semibold leading-snug text-white lg:text-[32px] lg:leading-[48px]">
               Stop Forgetting. Start Asking.
               <br />
-              Wherezat Finds What You Need—Fast.
+              UeyFind Finds What You Need—Fast.
             </p>
             <p className="font-poppins text-base text-white lg:text-[21px] lg:leading-8">
-              Wherezat, 2025.
+              UeyFind, 2026.
             </p>
           </div>
 
@@ -83,10 +83,10 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-0.5">
                   <p className="font-poppins text-lg font-medium leading-7 text-white">
-                    Team Wherezat
+                    Team UeyFind
                   </p>
                   <p className="font-poppins text-base leading-6 text-white/80">
-                    @wherezatapp
+                    @UeyFindapp
                   </p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export default function Footer() {
             </div>
             <p className="mt-6 font-poppins text-lg leading-[27px] text-white">
               We&apos;re just announced new feature that would help you increase your
-              experience of using wherezat!
+              experience of using UeyFind!
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function Footer() {
       <div className="relative inset-x-0 bottom-0 bg-brand-mint lg:absolute lg:h-[117px]">
         <div className="mx-auto flex h-full max-w-[1920px] flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row sm:py-8 lg:px-[106px]">
           <p className="font-poppins text-sm text-brand-dark lg:text-[18px] lg:leading-7">
-            © 2026 Wherezat. All rights reserved.
+            © 2026 UeyFind. All rights reserved.
           </p>
           <div className="flex items-center gap-[21px]">
             <SocialIcon label="Instagram">

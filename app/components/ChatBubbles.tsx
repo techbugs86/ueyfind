@@ -13,21 +13,21 @@ const BUBBLES: Bubble[] = [
   {
     img: "/Ellipse225.png",
     name: "John Alex",
-    text: "Hey Wherezat, Store the charger in the bedroom drawer.",
+    text: "Hey UeyFind, Store the charger in the bedroom drawer.",
     left: "-14%",
     top: "-2%",
   },
   {
     img: "/Ellipse226.png",
     name: "Desirae Lubin",
-    text: "Hey Wherezat, I kept the gate batteries in the living room shelf drawer.",
+    text: "Hey UeyFind, I kept the gate batteries in the living room shelf drawer.",
     left: "9%",
     top: "87%",
   },
   {
     img: "/Ellipse223.png",
     name: "Talon Bhiel Madsen",
-    text: "Hey Wherezat, Put the extra ketchup in the kitchen cabinet.",
+    text: "Hey UeyFind, Put the extra ketchup in the kitchen cabinet.",
     left: "73%",
     top: "73%",
   },
@@ -48,7 +48,7 @@ const M_BUBBLES: MobBubble[] = [
   {
     img: "/Ellipse225.png",
     name: "John Alex",
-    text: "Hey Wherezat, Store this charger in the bedroom drawer.",
+    text: "Hey UeyFind, Store this charger in the bedroom drawer.",
     left: "6%",
     top: "9%",
     side: "left",
@@ -56,7 +56,7 @@ const M_BUBBLES: MobBubble[] = [
   {
     img: "/Ellipse223.png",
     name: "Talon Bhiel Madsen",
-    text: "Hey Wherezat, Put the extra ketchup in the kitchen cabinet.",
+    text: "Hey UeyFind, Put the extra ketchup in the kitchen cabinet.",
     left: "38%",
     top: "74%",
     side: "right",
@@ -64,7 +64,7 @@ const M_BUBBLES: MobBubble[] = [
   {
     img: "/Ellipse226.png",
     name: "Desirae Lubin",
-    text: "Hey Wherezat, I kept the gate batteries in the living room shelf drawer.",
+    text: "Hey UeyFind, I kept the gate batteries in the living room shelf drawer.",
     left: "6%",
     top: "92%",
     side: "left",

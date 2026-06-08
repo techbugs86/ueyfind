@@ -6,10 +6,10 @@ export default function HowItWorks() {
       <div className="mx-auto max-w-[1920px] px-5 sm:px-8 lg:px-[110px]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3vw,2.75rem)] leading-tight">
-            How Wherezat Works
+            How UeyFind Works
           </h2>
           <p className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
-            Wherezat makes remembering effortless. Just speak to save anything—items,
+            UeyFind makes remembering effortless. Just speak to save anything—items,
             locations, notes, or reminders—and ask again anytime to retrieve it in
             seconds. No searching, no scrolling—just smart, voice-powered recall.
           </p>
@@ -26,7 +26,7 @@ export default function HowItWorks() {
                 <span className="font-bold text-brand-deep">Save or Find</span>
               </h3>
               <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.5vw,1.5rem)]">
-                Start by tapping the mic and telling Wherezat what you want to store
+                Start by tapping the mic and telling UeyFind what you want to store
                 or what you&apos;re trying to find. The AI listens, understands your voice
                 naturally, and begins processing your request instantly—no typing
                 needed.
@@ -67,7 +67,7 @@ export default function HowItWorks() {
                 <span className="font-bold">Results</span>
               </h3>
               <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.5vw,1.5rem)]">
-                Once the information is processed, Wherezat shows a clear, organized
+                Once the information is processed, UeyFind shows a clear, organized
                 result list. You&apos;ll quickly find the exact item or note you saved—no
                 digging, no confusion, just instant clarity.
               </p>
