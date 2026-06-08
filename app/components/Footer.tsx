@@ -6,9 +6,9 @@ export default function Footer() {
       <div className="mx-auto max-w-[1920px] px-6 lg:px-[106px]" style={{ paddingTop: "85px" }}>
         {/* Community CTA */}
         <div className="mt-[60px] rounded-[24px] bg-brand-teal px-8 py-12 lg:mt-[40px] lg:rounded-[38px] lg:px-[81px] lg:py-[100px]">
-          <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-12 xl:gap-[166px]">
-            <div className="flex flex-col gap-5 lg:flex-1 lg:gap-[21px] xl:w-[713px] xl:flex-none">
-              <h2 className="font-poppins font-semibold leading-tight text-white text-[clamp(2rem,3.6vw,4rem)] xl:leading-[96px]">
+          <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-12 2xl:gap-[166px]">
+            <div className="flex flex-col gap-5 lg:flex-1 lg:gap-[21px] 2xl:w-[713px] 2xl:flex-none">
+              <h2 className="font-poppins font-semibold leading-tight text-white text-[clamp(2rem,3.6vw,4rem)] 2xl:leading-[96px]">
                 Join the UeyFind
                 <br />
                 Community Updates
@@ -20,7 +20,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 lg:flex-1 lg:gap-[14px] xl:w-[640px] xl:flex-none">
+            <div className="flex flex-col gap-3 lg:flex-1 lg:gap-[14px] 2xl:w-[640px] 2xl:flex-none">
               <p className="font-poppins text-lg font-medium text-white lg:text-[26px] lg:leading-10">
                 Stay Connected
               </p>
@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
 
         {/* Footer body */}
-        <div className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-16 xl:gap-[513px] mb-[100px]">
+        <div className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-16 2xl:gap-[513px] mb-[100px]">
           {/* Logo and Text */}
           <div className="flex flex-col gap-5 lg:gap-[21px]">
             <Image
