@@ -36,7 +36,7 @@ export default function HowItWorks() {
 
           {/* Card 2 - Capture to Remember (mint, phone top / caption below) */}
           <Card tone="mint" className="flex flex-col items-center justify-between gap-6 pt-0 text-center lg:col-span-3">
-            <Phone src="/frame2.png" alt="Upload picture screen" className="max-w-[320px] sm:max-w-none" />
+            <Phone src="/frame2.png" alt="Upload picture screen" className="max-w-[300px] sm:max-w-[360px] lg:max-w-[300px] xl:max-w-[360px]" />
             <div className="pb-8 sm:pb-12">
               <h3 className="font-poppins font-bold text-brand-deep text-[clamp(1.5rem,2.6vw,2.67rem)]">
                 Capture to Remember
@@ -53,7 +53,7 @@ export default function HowItWorks() {
               Capture to Remember
             </h3>
             <div className="flex w-full flex-1 items-end justify-center">
-              <Phone src="/frame3.png" alt="Capture to remember screen" className="max-w-[320px] sm:max-w-[550px]" />
+              <Phone src="/frame3.png" alt="Capture to remember screen" className="max-w-[300px] sm:max-w-[360px] lg:max-w-[320px] xl:max-w-[420px]" />
             </div>
           </Card>
 
