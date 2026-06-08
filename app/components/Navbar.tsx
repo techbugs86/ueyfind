@@ -23,7 +23,7 @@ export default function Navbar() {
             alt="UeyFind"
             width={64}
             height={64}
-            className="h-10 w-auto sm:h-14 lg:h-[70px]"
+            className="h-10 w-auto sm:h-14 lg:h-[100px]"
             priority
           />
         </a>
