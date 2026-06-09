@@ -67,7 +67,6 @@ export default function SupportPage() {
     <main className="relative w-full overflow-x-hidden bg-white">
       <Navbar />
       <PageHeader
-        eyebrow="Support"
         title="We're here to help"
         subtitle="Find quick answers, reach our team, or drop us a message. However you need help with UeyFind—we've got you."
       />

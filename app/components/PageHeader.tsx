@@ -2,11 +2,9 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 
 export default function PageHeader({
-  eyebrow,
   title,
   subtitle,
 }: {
-  eyebrow: string;
   title: string;
   subtitle: string;
 }) {
@@ -29,16 +27,7 @@ export default function PageHeader({
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-4 px-5 sm:gap-5">
         <Reveal
-          as="span"
-          variant="fade"
-          className="rounded-full border border-brand-mint/30 bg-brand-mint/10 px-4 py-1.5 font-poppins text-xs font-medium uppercase tracking-[0.2em] text-brand-mint sm:text-sm"
-        >
-          {eyebrow}
-        </Reveal>
-
-        <Reveal
           as="h1"
-          delay={100}
           className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,5vw,4.5rem)]"
         >
           {title}

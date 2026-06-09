@@ -46,7 +46,6 @@ export default function AboutPage() {
     <main className="relative w-full overflow-x-hidden bg-white">
       <Navbar />
       <PageHeader
-        eyebrow="About Us"
         title="The memory layer for your everyday life"
         subtitle="UeyFind is your AI-first voice assistant that helps you store and retrieve anything in seconds—so you never lose track of what matters."
       />

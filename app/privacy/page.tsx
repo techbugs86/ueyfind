@@ -67,7 +67,6 @@ export default function PrivacyPage() {
     <main className="relative w-full overflow-x-hidden bg-white">
       <Navbar />
       <PageHeader
-        eyebrow="Privacy Policy"
         title="Your memories are yours"
         subtitle="We built UeyFind to remember for you—not to profit from your data. Here's exactly how we handle what you store."
       />
