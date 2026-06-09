@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 type Bubble = {
   img: string;
@@ -98,10 +99,10 @@ export default function ChatBubbles() {
         <div className="relative mx-auto aspect-[375/700] w-full">
           {/* center heading */}
           <div className="absolute inset-x-[4%] top-1/2 z-30 -translate-y-1/2 text-center">
-            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(1.5rem,6.5vw,2.25rem)]">
+            <Reveal as="h2" variant="fade" className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(1.5rem,6.5vw,2.25rem)]">
               <span className="text-brand-coral">Your life,</span> organized
               effortlessly because AI tracks everything you tell it.
-            </h2>
+            </Reveal>
           </div>
 
           {/* lone avatars */}
@@ -122,9 +123,11 @@ export default function ChatBubbles() {
           ))}
 
           {/* avatar + card bubbles */}
-          {M_BUBBLES.map((b) => (
-            <div
+          {M_BUBBLES.map((b, i) => (
+            <Reveal
               key={`mb-${b.name}`}
+              variant="fade"
+              delay={i * 120}
               style={{ left: b.left, top: b.top }}
               className={`absolute z-20 flex w-[62%] -translate-y-1/2 items-start gap-2 ${
                 b.side === "right" ? "flex-row-reverse" : ""
@@ -147,7 +150,7 @@ export default function ChatBubbles() {
                   {b.text}
                 </p>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -163,10 +166,10 @@ export default function ChatBubbles() {
 
           {/* center heading */}
           <div className="absolute inset-[-36%] mx-[18%] flex items-center justify-center px-4 text-center">
-            <h2 className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(2.25rem,3.4vw,5.33rem)]">
+            <Reveal as="h2" variant="fade" className="font-poppins font-bold leading-snug text-brand-deep text-[clamp(2.25rem,3.4vw,5.33rem)]">
               <span className="text-brand-coral">Your life,</span> organized
               effortlessly because AI tracks everything you tell it.
-            </h2>
+            </Reveal>
           </div>
 
           {/* lone avatars (always a perfect circle) */}
@@ -188,9 +191,11 @@ export default function ChatBubbles() {
 
           {/* chat bubbles (363.32 x 110.89 in the design = ~18.9% of width)
               uses the exact Vector.svg shape (mint glass + cyan gradient border) */}
-          {BUBBLES.map((b) => (
-            <div
+          {BUBBLES.map((b, i) => (
+            <Reveal
               key={b.name}
+              variant="fade"
+              delay={i * 140}
               style={{ left: b.left, top: b.top }}
               className="absolute z-20 flex aspect-[364/111] w-[24%] items-center"
             >
@@ -209,7 +214,7 @@ export default function ChatBubbles() {
                   {b.text}
                 </p>
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

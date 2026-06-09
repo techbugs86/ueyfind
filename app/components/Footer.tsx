@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 export default function Footer() {
   return (
     <footer id="privacy" className="relative bg-brand-dark lg:pb-[117px]">
       <div className="mx-auto max-w-[1920px] px-6 lg:px-[106px]" style={{ paddingTop: "85px" }}>
         {/* Community CTA */}
-        <div className="mt-[60px] rounded-[24px] bg-brand-teal px-8 py-12 lg:mt-[40px] lg:rounded-[38px] lg:px-[81px] lg:py-[100px]">
+        <Reveal variant="scale" className="mt-[60px] rounded-[24px] bg-brand-teal px-8 py-12 lg:mt-[40px] lg:rounded-[38px] lg:px-[81px] lg:py-[100px]">
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-12 2xl:gap-24">
             <div className="flex min-w-0 flex-col gap-5 lg:flex-1 lg:gap-[21px]">
               <h2 className="font-poppins font-semibold leading-tight text-white text-[clamp(2rem,3.6vw,4rem)] 2xl:leading-[96px]">
@@ -44,10 +45,10 @@ export default function Footer() {
               </p>
             </div>
           </div>
-        </div>
+        </Reveal>
 
         {/* Footer body */}
-        <div className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-16 2xl:gap-[513px] mb-[100px]">
+        <Reveal className="mt-16 flex flex-col gap-12 lg:mt-[170px] lg:flex-row lg:items-end lg:justify-between lg:gap-16 2xl:gap-[513px] mb-[100px]">
           {/* Logo and Text */}
           <div className="flex flex-col gap-5 lg:gap-[21px]">
             <Image
@@ -99,7 +100,7 @@ export default function Footer() {
               experience of using UeyFind!
             </p>
           </div>
-        </div>
+        </Reveal>
       </div>
 
       {/* Bottom strip */}

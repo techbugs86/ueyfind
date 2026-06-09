@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 const FLOATING = [
-  { src: "/Toolbox1.png", alt: "toolbox", className: "left-[-18%] top-[11%] w-[24%] -rotate-12" },
-  { src: "/Christmas1.png", alt: "ornament", className: "left-[5%] bottom-[7%] w-[24%] rotate-6" },
-  { src: "/Watch1.png", alt: "watch", className: "right-[-1%] top-[21%] w-[24%] rotate-12" },
-  { src: "/Accumulator1.png", alt: "battery", className: "right-[-13%] top-[73%] w-[24%] -rotate-6"},
+  { src: "/Toolbox1.png", alt: "toolbox", className: "left-[-18%] top-[11%] w-[24%] -rotate-12", rot: "rotate(-12deg)", delay: "0s" },
+  { src: "/Christmas1.png", alt: "ornament", className: "left-[5%] bottom-[7%] w-[24%] rotate-6", rot: "rotate(6deg)", delay: "1.2s" },
+  { src: "/Watch1.png", alt: "watch", className: "right-[-1%] top-[21%] w-[24%] rotate-12", rot: "rotate(12deg)", delay: "0.6s" },
+  { src: "/Accumulator1.png", alt: "battery", className: "right-[-13%] top-[73%] w-[24%] -rotate-6", rot: "rotate(-6deg)", delay: "1.8s" },
 ];
 
 export default function Hero() {
@@ -26,48 +27,55 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto mt-10 flex max-w-5xl flex-col items-center gap-5 px-5 sm:mt-14 sm:gap-6 lg:mt-[70px]">
-        <h1 className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,6vw,5.33rem)]">
+        <Reveal as="h1" className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,6vw,5.33rem)]">
           Never Lose Track Again
           <br />
           Just Ask UeyFind
-        </h1>
+        </Reveal>
 
-        <p className="max-w-4xl font-poppins font-light text-white/85 text-[clamp(1rem,1.6vw,1.5rem)]">
+        <Reveal as="p" delay={120} className="max-w-4xl font-poppins font-light text-white/85 text-[clamp(1rem,1.6vw,1.5rem)]">
           UeyFind is your AI-first voice assistant that helps you store and
           retrieve anything in seconds. Just speak, and let UeyFind remember for
           you—never lose track of your important items again
-        </p>
+        </Reveal>
 
-        <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
+        <Reveal delay={240} className="mt-2 flex flex-wrap items-center justify-center gap-4">
           <StoreBadge store="google" />
           <StoreBadge store="apple" />
-        </div>
+        </Reveal>
       </div>
 
       {/* phone + glow */}
       <div className="relative z-10 mx-auto mt-10 flex w-[78%] max-w-3xl items-end justify-center sm:mt-12 lg:-mb-px">
         {/* glow */}
-        <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vw] max-h-[420px] w-[60vw] max-w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-coral/20 blur-3xl" />
+        <div className="animate-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vw] max-h-[420px] w-[60vw] max-w-[420px] rounded-full bg-brand-coral/20 blur-3xl" />
 
         {FLOATING.map((f) => (
-          <Image
+          <div
             key={f.alt}
-            src={f.src}
-            alt={f.alt}
-            width={96}
-            height={96}
-            className={`absolute z-20 h-auto drop-shadow-xl ${f.className}`}
-          />
+            className={`animate-float absolute z-20 ${f.className}`}
+            style={{ ["--float-rot" as string]: f.rot, animationDelay: f.delay }}
+          >
+            <Image
+              src={f.src}
+              alt={f.alt}
+              width={96}
+              height={96}
+              className="h-auto w-full drop-shadow-xl"
+            />
+          </div>
         ))}
 
-        <Image
-          src="/mockup.png"
-          alt="UeyFind app on iPhone"
-          width={340}
-          height={690}
-          priority
-          className="relative z-10 h-auto w-full max-w-[800px]"
-        />
+        <Reveal variant="scale" delay={360} className="relative z-10 w-full">
+          <Image
+            src="/mockup.png"
+            alt="UeyFind app on iPhone"
+            width={340}
+            height={690}
+            priority
+            className="h-auto w-full max-w-[800px]"
+          />
+        </Reveal>
       </div>
     </section>
   );
@@ -76,7 +84,7 @@ export default function Hero() {
 function StoreBadge({ store }: { store: "google" | "apple" }) {
   const isApple = store === "apple";
   return (
-    <button className="flex items-center gap-3 rounded-xl border border-white/15 bg-[#231F20] px-5 py-2.5 text-left transition-transform hover:scale-105">
+    <button className="flex cursor-pointer items-center gap-3 rounded-xl border border-white/15 bg-[#231F20] px-5 py-2.5 text-left transition-transform hover:scale-105">
       <span className="text-white">
         {isApple ? (
           <svg width="22" height="26" viewBox="0 0 22 26" fill="currentColor">

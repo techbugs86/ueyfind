@@ -1,23 +1,25 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-[1920px] px-5 sm:px-8 lg:px-[110px]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3vw,2.75rem)] leading-tight">
+          <Reveal as="h2" className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3vw,2.75rem)] leading-tight">
             How UeyFind Works
-          </h2>
-          <p className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
+          </Reveal>
+          <Reveal as="p" delay={120} className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
             UeyFind makes remembering effortless. Just speak to save anything—items,
             locations, notes, or reminders—and ask again anytime to retrieve it in
             seconds. No searching, no scrolling—just smart, voice-powered recall.
-          </p>
+          </Reveal>
         </div>
 
         <div className="mt-10 grid gap-6 sm:mt-14 lg:grid-cols-8">
           {/* Card 1 - Speak to Save or Find (pink, phone left / text right) */}
-          <Card tone="coral" className="flex flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left lg:col-span-5">
+          <Reveal variant="scale" className="lg:col-span-5">
+          <Card tone="coral" className="flex h-full flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left">
             <Phone src="/frame1.png" alt="Speak to save or find screen" className="max-w-[280px] sm:max-w-[360px] lg:max-w-[600px]" />
             <div className="flex-1 pb-6 lg:pb-20 lg:pl-[47px] lg:pr-[50px]">
               <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4vw,3.33rem)]">
@@ -33,9 +35,11 @@ export default function HowItWorks() {
               </p>
             </div>
           </Card>
+          </Reveal>
 
           {/* Card 2 - Capture to Remember (mint, phone top / caption below) */}
-          <Card tone="mint" className="flex flex-col items-center justify-between gap-6 pt-0 text-center lg:col-span-3">
+          <Reveal variant="scale" delay={120} className="lg:col-span-3">
+          <Card tone="mint" className="flex h-full flex-col items-center justify-between gap-6 pt-0 text-center">
             <Phone src="/frame2.png" alt="Upload picture screen" className="max-w-[320px] sm:max-w-none" />
             <div className="pb-8 sm:pb-12">
               <h3 className="font-poppins font-bold text-brand-deep text-[clamp(1.5rem,2.6vw,2.67rem)]">
@@ -46,9 +50,11 @@ export default function HowItWorks() {
               </p>
             </div>
           </Card>
+          </Reveal>
 
           {/* Card 3 - Capture to Remember (mint, heading top / phone below w/ bubble) */}
-          <Card tone="mint" className="flex flex-col items-center gap-5 pt-8 text-center sm:pt-10 lg:col-span-3">
+          <Reveal variant="scale" delay={240} className="lg:col-span-3">
+          <Card tone="mint" className="flex h-full flex-col items-center gap-5 pt-8 text-center sm:pt-10">
             <h3 className="font-poppins font-bold text-brand-deep text-[clamp(1.5rem,2.6vw,2.67rem)]">
               Capture to Remember
             </h3>
@@ -56,9 +62,11 @@ export default function HowItWorks() {
               <Phone src="/frame3.png" alt="Capture to remember screen" className="max-w-[320px] sm:max-w-[550px]" />
             </div>
           </Card>
+          </Reveal>
 
           {/* Card 4 - Quick Results (pink, phone left / text right) */}
-          <Card tone="coral" className="flex flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left lg:col-span-5">
+          <Reveal variant="scale" delay={120} className="lg:col-span-5">
+          <Card tone="coral" className="flex h-full flex-col items-center gap-4 text-center lg:flex-row lg:items-end lg:gap-5 lg:text-left">
             <Phone src="/frame4.png" alt="Quick results screen" className="max-w-[280px] sm:max-w-[360px] lg:max-w-[550px]" />
             <div className="flex-1 pb-6 lg:pb-20 lg:pl-[47px] lg:pr-[50px]">
               <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4vw,3.33rem)]">
@@ -73,6 +81,7 @@ export default function HowItWorks() {
               </p>
             </div>
           </Card>
+          </Reveal>
         </div>
       </div>
     </section>

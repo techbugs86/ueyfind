@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 type Review = {
   img: string;
@@ -146,14 +147,14 @@ export default function Reviews() {
 
       <div className="relative mx-auto max-w-[1920px] px-5 py-16 sm:px-6 sm:py-20 lg:py-0">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3.4vw,3.5rem)] leading-tight">
+          <Reveal as="h2" className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3.4vw,3.5rem)] leading-tight">
             Reviews From Our Users
-          </h2>
-          <p className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
+          </Reveal>
+          <Reveal as="p" delay={120} className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
             See what our community has to say about UeyFind. Real feedback from
             real users sharing their experiences. Discover why people love staying
             connected with us.
-          </p>
+          </Reveal>
         </div>
 
         {/* Mobile / tablet: scattered tilted stack matching the design */}
@@ -162,16 +163,21 @@ export default function Reviews() {
             const rot = M_TILT[i % M_TILT.length];
             const shift = M_SHIFT[i % M_SHIFT.length];
             return (
-              <div
+              <Reveal
                 key={i}
+                variant="fade"
+                delay={i * 80}
                 className="w-[100%] mt-3 first:mt-0"
-                style={{
-                  transform: `rotate(${rot}deg) translateX(${shift})`,
-                  marginLeft: i % 2 === 0 ? "0" : "auto",
-                }}
               >
-                <ReviewCard review={r} />
-              </div>
+                <div
+                  style={{
+                    transform: `rotate(${rot}deg) translateX(${shift})`,
+                    marginLeft: i % 2 === 0 ? "0" : "auto",
+                  }}
+                >
+                  <ReviewCard review={r} />
+                </div>
+              </Reveal>
             );
           })}
         </div>
@@ -180,18 +186,17 @@ export default function Reviews() {
         <div className="relative mt-4 hidden lg:block" style={{ marginLeft: "50px", marginRight: "50px" }}>
           <div className="relative w-full pb-[108%]">
             {REVIEWS.map((r, i) => (
-              <div
+              <Reveal
                 key={i}
+                variant="fade"
+                delay={i * 90}
                 className="absolute"
-                style={{
-                  left: r.left,
-                  top: r.top,
-                  width: r.width ?? CARD_WIDTH,
-                  transform: `rotate(${r.rotate})`,
-                }}
+                style={{ left: r.left, top: r.top, width: r.width ?? CARD_WIDTH }}
               >
-                <ReviewCard review={r} />
-              </div>
+                <div style={{ transform: `rotate(${r.rotate})` }}>
+                  <ReviewCard review={r} />
+                </div>
+              </Reveal>
             ))}
           </div>
         </div>
