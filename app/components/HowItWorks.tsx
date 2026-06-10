@@ -30,7 +30,7 @@ export default function HowItWorks() {
                   <br />
                   <span className="font-bold text-brand-deep">Save or Find</span>
                 </h3>
-                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.5cqw)]">
+                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.4cqw)]">
                   Start by tapping the mic and telling UeyFind what you want to store
                   or what you&apos;re trying to find. The AI listens, understands your voice
                   naturally, and begins processing your request instantly—no typing
