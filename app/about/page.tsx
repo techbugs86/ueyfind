@@ -78,13 +78,13 @@ export default function AboutPage() {
             <div className="absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-brand-coral-soft/40 to-brand-mint/40 blur-2xl" />
 
             {/* framed panel keeps the tall phone fully contained */}
-            <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#FCEAE6] to-[#E4F7F1] px-8 pt-10 shadow-[0_30px_70px_rgba(7,48,53,0.12)]">
+            <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#FCEAE6] to-[#E4F7F1] px-8 shadow-[0_30px_70px_rgba(7,48,53,0.12)]" style={{ paddingTop: "20%" }}>
               <Image
                 src="/mockup.png"
                 alt="UeyFind app"
                 width={420}
                 height={860}
-                className="mx-auto h-auto w-full max-w-[280px] drop-shadow-2xl"
+                className="mx-auto h-auto w-full max-w-[400px] drop-shadow-2xl"
               />
 
               {/* floating accent chips echoing the copy */}

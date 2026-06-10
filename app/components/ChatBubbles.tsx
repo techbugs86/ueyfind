@@ -84,11 +84,27 @@ const M_BUBBLES: MobBubble[] = [
     top: "92%",
     side: "left",
   },
+  // {
+  //   img: "/Ellipse224.png",
+  //   name: "Desirae Lubin",
+  //   text: "Hey UeyFind, I kept the gate batteries in the living room shelf drawer.",
+  //   left: "6%",
+  //   top: "92%",
+  //   side: "left",
+  // },
+  {
+    img: "/Ellipse227.png",
+    name: "Desirae Lubin",
+    text: "Hey UeyFind, I kept the gate batteries in the living room shelf drawer.",
+    left: "40%",
+    top: "29%",
+    side: "left",
+  },
 ];
 
 const M_AVATARS: { img: string; left: string; top: string }[] = [
-  { img: "/Ellipse227.png", left: "82%", top: "4%" },
-  { img: "/Ellipse224.png", left: "13%", top: "35%" },
+  // { img: "/Ellipse227.png", left: "82%", top: "4%" },
+  // { img: "/Ellipse224.png", left: "13%", top: "35%" },
 ];
 
 export default function ChatBubbles() {
