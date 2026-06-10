@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import DataDeletionForm from "../components/DataDeletionForm";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — UeyFind",
@@ -50,8 +51,9 @@ const SECTIONS = [
     title: "6. Your rights",
     body: [
       "You can access, correct, export, or delete your data at any time. You control what you store and what you remove.",
-      "To exercise any of these rights, contact us through the Support page.",
+      "To exercise any of these rights, contact us through the Support page—or request permanent deletion of all your data right here.",
     ],
+    deletion: true,
   },
   {
     title: "7. Changes to this policy",
@@ -97,6 +99,7 @@ export default function PrivacyPage() {
                       {p}
                     </p>
                   ))}
+                  {"deletion" in s && s.deletion && <DataDeletionForm />}
                 </div>
               </Reveal>
             ))}

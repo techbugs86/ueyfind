@@ -22,8 +22,8 @@ const BUBBLES: Bubble[] = [
     img: "/Ellipse226.png",
     name: "Desirae Lubin",
     text: "Hey UeyFind, I kept the gate batteries in the living room shelf drawer.",
-    left: "9%",
-    top: "87%",
+    left: "19%",
+    top: "97%",
   },
   {
     img: "/Ellipse223.png",
@@ -32,6 +32,20 @@ const BUBBLES: Bubble[] = [
     left: "73%",
     top: "73%",
   },
+  {
+    img: "/Ellipse223.png",
+    name: "Talon Bhiel Madsen",
+    text: "Hey UeyFind, Put the extra ketchup in the kitchen cabinet.",
+    left: "-28%",
+    top: "85%",
+  },
+  {
+    img: "/Ellipse223.png",
+    name: "Talon Bhiel Madsen",
+    text: "Hey UeyFind, Put the extra ketchup in the kitchen cabinet.",
+    left: "78%",
+    top: "7%",
+  },
 ];
 
 /* lone profile photos scattered behind the bubbles */
@@ -39,7 +53,7 @@ const AVATARS: { img: string; left: string; top: string; size: string }[] = [
   { img: "/Ellipse225.png", left: "106%", top: "9%", size: "w-[17%]" },
   { img: "/Ellipse224.png", left: "2%", top: "-11%", size: "w-[17%]" },
   { img: "/Ellipse226.png", left: "-17.5%", top: "74.4%", size: "w-[17%]" },
-  { img: "/Ellipse223.png", left: "35.7%", top: "92.8%", size: "w-[17%]" },
+  { img: "/Ellipse223.png", left: "45.7%", top: "102.8%", size: "w-[17%]" },
   { img: "/Ellipse227.png", left: "102.8%", top: "83%", size: "w-[17%]" },
 ];
 

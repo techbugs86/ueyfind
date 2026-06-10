@@ -74,14 +74,30 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal variant="scale" delay={120} className="relative mx-auto w-full max-w-md">
+            {/* soft glow behind the framed panel */}
             <div className="absolute inset-0 -z-10 rounded-[40px] bg-gradient-to-br from-brand-coral-soft/40 to-brand-mint/40 blur-2xl" />
-            <Image
-              src="/mockup.png"
-              alt="UeyFind app"
-              width={420}
-              height={860}
-              className="mx-auto h-auto w-full max-w-[360px] drop-shadow-2xl"
-            />
+
+            {/* framed panel keeps the tall phone fully contained */}
+            <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#FCEAE6] to-[#E4F7F1] px-8 pt-10 shadow-[0_30px_70px_rgba(7,48,53,0.12)]">
+              <Image
+                src="/mockup.png"
+                alt="UeyFind app"
+                width={420}
+                height={860}
+                className="mx-auto h-auto w-full max-w-[280px] drop-shadow-2xl"
+              />
+
+              {/* floating accent chips echoing the copy */}
+              <div className="absolute left-5 top-6 rounded-2xl bg-white/90 px-4 py-2 shadow-lg backdrop-blur-sm">
+                <p className="font-poppins text-xs font-semibold text-brand-deep">🎙️ Just speak</p>
+              </div>
+              <div className="absolute right-5 top-1/3 rounded-2xl bg-white/90 px-4 py-2 shadow-lg backdrop-blur-sm">
+                <p className="font-poppins text-xs font-semibold text-brand-coral">Recalled in &lt;2s</p>
+              </div>
+              <div className="absolute bottom-8 left-6 rounded-2xl bg-white/90 px-4 py-2 shadow-lg backdrop-blur-sm">
+                <p className="font-poppins text-xs font-semibold text-brand-deep">A memory that never fades</p>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>

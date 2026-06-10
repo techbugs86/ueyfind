@@ -136,7 +136,7 @@ const REVIEWS: Review[] = [
 
 export default function Reviews() {
   return (
-    <section id="faqs" className="relative overflow-hidden bg-white">
+    <section id="faqs" className="relative overflow-hidden bg-white" style={{ marginTop: "240px" }}>
       {/* faint concentric circle lines in the back */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[140vw] max-w-[1400px] -translate-x-1/2 -translate-y-1/2 lg:w-[1000px]">
         <div className="absolute inset-0 rounded-full border border-brand-coral/[0.07]" />

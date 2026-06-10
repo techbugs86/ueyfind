@@ -50,23 +50,29 @@ export default function Hero() {
         {/* glow */}
         <div className="animate-glow pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[60vw] max-h-[420px] w-[60vw] max-w-[420px] rounded-full bg-brand-coral/20 blur-3xl" />
 
-        {FLOATING.map((f) => (
-          <div
+        {FLOATING.map((f, i) => (
+          <Reveal
             key={f.alt}
-            className={`animate-float absolute z-20 ${f.className}`}
-            style={{ ["--float-rot" as string]: f.rot, animationDelay: f.delay }}
+            variant="scale"
+            delay={500 + i * 160}
+            className={`absolute z-20 ${f.className}`}
           >
-            <Image
-              src={f.src}
-              alt={f.alt}
-              width={96}
-              height={96}
-              className="h-auto w-full drop-shadow-xl"
-            />
-          </div>
+            <div
+              className="animate-float"
+              style={{ ["--float-rot" as string]: f.rot, animationDelay: f.delay }}
+            >
+              <Image
+                src={f.src}
+                alt={f.alt}
+                width={96}
+                height={96}
+                className="h-auto w-full drop-shadow-xl"
+              />
+            </div>
+          </Reveal>
         ))}
 
-        <Reveal variant="scale" delay={360} className="relative z-10 w-full">
+        <Reveal variant="scale" className="relative z-10 w-full">
           <Image
             src="/mockup.png"
             alt="UeyFind app on iPhone"
