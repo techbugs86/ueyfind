@@ -107,7 +107,7 @@ export default function PrivacyPage() {
               Questions about your privacy?
             </h3>
             <p className="mx-auto mt-3 max-w-xl font-poppins font-light leading-relaxed text-white/85 text-[clamp(1rem,1.4vw,1.25rem)]">
-              We're happy to walk you through anything. Reach out and our team will respond quickly.
+              We&apos;re happy to walk you through anything. Reach out and our team will respond quickly.
             </p>
             <a
               href="/support"
