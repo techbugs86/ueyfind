@@ -23,14 +23,14 @@ export default function HowItWorks() {
             {/* Card 1 - Speak to Save or Find (pink, phone left / text right) */}
             <Reveal variant="scale" className="@5xl/grid:col-span-5">
             <Card tone="coral" className="flex h-full flex-col items-center gap-4 text-center @5xl/grid:flex-row @5xl/grid:items-end @5xl/grid:gap-5 @5xl/grid:text-left">
-              <Phone src="/frame1.png" alt="Speak to save or find screen" className="w-[min(280px,70vw)] sm:w-[min(360px,42vw)] @5xl/grid:w-[clamp(300px,31cqw,600px)]" />
-              <div className="flex-1 pb-6 @5xl/grid:pb-20 @5xl/grid:pl-[47px] @5xl/grid:pr-[50px]">
-                <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4cqw,3.33rem)]">
+              <Phone src="/frame1.png" alt="Speak to save or find screen" className="w-[min(280px,70vw)] sm:w-[min(360px,42vw)] @5xl/grid:w-[31cqw]" />
+              <div className="flex-1 pb-6 @5xl/grid:pb-[3.5cqw] @5xl/grid:pl-[2.7cqw] @5xl/grid:pr-[2.9cqw]">
+                <h3 className="font-poppins leading-tight text-brand-coral text-[max(1.5rem,3.4cqw)]">
                   Speak to
                   <br />
                   <span className="font-bold text-brand-deep">Save or Find</span>
                 </h3>
-                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.5cqw,1.5rem)]">
+                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.5cqw)]">
                   Start by tapping the mic and telling UeyFind what you want to store
                   or what you&apos;re trying to find. The AI listens, understands your voice
                   naturally, and begins processing your request instantly—no typing
@@ -70,14 +70,14 @@ export default function HowItWorks() {
             {/* Card 4 - Quick Results (pink, phone left / text right) */}
             <Reveal variant="scale" delay={120} className="@5xl/grid:col-span-5">
             <Card tone="coral" className="flex h-full flex-col items-center gap-4 text-center @5xl/grid:flex-row @5xl/grid:items-end @5xl/grid:gap-5 @5xl/grid:text-left">
-              <Phone src="/frame4.png" alt="Quick results screen" className="w-[min(280px,70vw)] sm:w-[min(360px,42vw)] @5xl/grid:w-[clamp(300px,24cqw,550px)]" />
-              <div className="flex-1 pb-6 @5xl/grid:pb-20 @5xl/grid:pl-[47px] @5xl/grid:pr-[50px]">
-                <h3 className="font-poppins leading-tight text-brand-coral text-[clamp(1.75rem,3.4cqw,3.33rem)]">
+              <Phone src="/frame4.png" alt="Quick results screen" className="w-[min(280px,70vw)] sm:w-[min(360px,42vw)] @5xl/grid:w-[28cqw]" />
+              <div className="flex-1 pb-6 @5xl/grid:pb-[3.5cqw] @5xl/grid:pl-[2.7cqw] @5xl/grid:pr-[2.9cqw]">
+                <h3 className="font-poppins leading-tight text-brand-coral text-[max(1.5rem,3.4cqw)]">
                   Quick
                   <br />
                   <span className="font-bold">Results</span>
                 </h3>
-                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.5cqw,1.5rem)]">
+                <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.5cqw)]">
                   Once the information is processed, UeyFind shows a clear, organized
                   result list. You&apos;ll quickly find the exact item or note you saved—no
                   digging, no confusion, just instant clarity.
