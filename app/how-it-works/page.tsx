@@ -82,7 +82,7 @@ export default function HowItWorksPage() {
         subtitle="From your voice to instant recall in seconds—here's how UeyFind stores and retrieves everything you tell it."
       />
 
-      <HowItWorks />
+      <HowItWorks title="Speak It, Save It, Find It" />
 
       {/* Numbered steps */}
       <section className="bg-brand-cream py-16 sm:py-20 lg:py-28">

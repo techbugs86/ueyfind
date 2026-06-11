@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-export default function HowItWorks() {
+export default function HowItWorks({ title = "How UeyFind Works" }: { title?: string }) {
   return (
     <section id="how-it-works" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-[1920px] px-5 sm:px-8 lg:px-[110px]">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal as="h2" className="font-poppins font-bold text-brand-deep text-[clamp(1.875rem,3vw,2.75rem)] leading-tight">
-            How UeyFind Works
+            {title}
           </Reveal>
           <Reveal as="p" delay={120} className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
             UeyFind makes remembering effortless. Just speak to save anything—items,
@@ -55,11 +55,11 @@ export default function HowItWorks() {
             </Card>
             </Reveal>
 
-            {/* Card 3 - Capture to Remember (mint, heading top / phone below w/ bubble) */}
+            {/* Card 3 - Smart Prompts (mint, heading top / phone below w/ bubble) */}
             <Reveal variant="scale" delay={240} className="@5xl/grid:col-span-3">
             <Card tone="mint" className="@container/card flex h-full flex-col items-center gap-5 pt-8 text-center sm:pt-10">
               <h3 className="font-poppins font-bold text-brand-deep text-[clamp(1.5rem,8cqw,2.67rem)]">
-                Capture to Remember
+                Smarter Storage
               </h3>
               <div className="flex w-full flex-1 items-end justify-center">
                 <Phone src="/frame3.png" alt="Capture to remember screen" className="w-[min(500px,90cqw)]" />
