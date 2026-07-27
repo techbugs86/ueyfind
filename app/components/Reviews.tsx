@@ -151,9 +151,10 @@ export default function Reviews() {
             Reviews From Our Users
           </Reveal>
           <Reveal as="p" delay={120} className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
-            See what our community has to say about UeyFind. Real feedback from
-            real users sharing their experiences. Discover why people love staying
-            connected with us.
+            ⚠️🤥 If we had real users, here&apos;s the things they would be saying about us! 😅
+            <span className="mt-1 block text-sm text-brand-dark/60">
+              (Testimonials written by us, at 2am, fueled by hope and caffeine.)
+            </span>
           </Reveal>
         </div>
 
