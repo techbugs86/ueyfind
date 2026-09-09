@@ -7,15 +7,15 @@ import HowItWorks from "../components/HowItWorks";
 import Reveal from "../components/Reveal";
 
 export const metadata: Metadata = {
-  title: "How It Works — UeyFind",
+  title: "How It Works — Stowry",
   description:
-    "See how UeyFind works: speak to save or find anything, capture items with a photo, and retrieve them in seconds with AI-powered voice recall.",
+    "See how Stowry works: speak to save or find anything, capture items with a photo, and retrieve them in seconds with AI-powered voice recall.",
 };
 
 const STEPS = [
   {
     title: "Speak it",
-    text: "Tap the mic and tell UeyFind what you're storing or looking for—in plain, natural language.",
+    text: "Tap the mic and tell Stowry what you're storing or looking for—in plain, natural language.",
   },
   {
     title: "AI understands",
@@ -23,11 +23,11 @@ const STEPS = [
   },
   {
     title: "It's remembered",
-    text: "UeyFind files the memory away securely, linked to the details that make it findable later.",
+    text: "Stowry files the memory away securely, linked to the details that make it findable later.",
   },
   {
     title: "Ask anytime",
-    text: "Months later, just ask. UeyFind surfaces the exact item in seconds—no scrolling, no digging.",
+    text: "Months later, just ask. Stowry surfaces the exact item in seconds—no scrolling, no digging.",
   },
 ];
 
@@ -39,7 +39,7 @@ const FEATURES = [
   },
   {
     title: "Snap to remember",
-    text: "Some things are easier shown than said. Capture a photo and UeyFind stores it with context.",
+    text: "Some things are easier shown than said. Capture a photo and Stowry stores it with context.",
     tone: "mint" as const,
   },
   {
@@ -57,11 +57,11 @@ const FEATURES = [
 const FAQS = [
   {
     q: "Do I have to phrase things a specific way?",
-    a: "No. UeyFind understands natural language and context, so you can speak however feels normal.",
+    a: "No. Stowry understands natural language and context, so you can speak however feels normal.",
   },
   {
     q: "What kinds of things can I store?",
-    a: "Anything—items, locations, notes, reminders, documents. If you can say it, UeyFind can remember it.",
+    a: "Anything—items, locations, notes, reminders, documents. If you can say it, Stowry can remember it.",
   },
   {
     q: "Does it work offline?",
@@ -78,8 +78,8 @@ export default function HowItWorksPage() {
     <main className="relative w-full overflow-x-hidden bg-white">
       <Navbar />
       <PageHeader
-        title="How UeyFind works"
-        subtitle="From your voice to instant recall in seconds—here's how UeyFind stores and retrieves everything you tell it."
+        title="How Stowry works"
+        subtitle="From your voice to instant recall in seconds—here's how Stowry stores and retrieves everything you tell it."
       />
 
       <HowItWorks title="Speak It, Save It, Find It" />
@@ -195,7 +195,7 @@ export default function HowItWorksPage() {
             Ready to never lose track again?
           </Reveal>
           <Reveal as="p" delay={120} className="max-w-xl font-poppins font-light text-white/80 text-[clamp(1rem,1.5vw,1.25rem)]">
-            Download UeyFind and let your voice do the remembering.
+            Download Stowry and let your voice do the remembering.
           </Reveal>
           <Reveal delay={240} className="mt-2 flex flex-wrap items-center justify-center gap-4">
             <Link

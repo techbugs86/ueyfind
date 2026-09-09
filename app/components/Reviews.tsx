@@ -111,7 +111,7 @@ const REVIEWS: Review[] = [
   {
     img: "/Rectangle13(3).png",
     name: "Cheyenne Calzoni",
-    text: "UeyFind has literally saved me hours. I just tell it where I kept something, and it reminds me instantly when I ask again. Super helpful!",
+    text: "Stowry has literally saved me hours. I just tell it where I kept something, and it reminds me instantly when I ask again. Super helpful!",
     bg: "#F0F6FE",
     star: "#9CB0FF",
     left: "5.4%",
@@ -123,7 +123,7 @@ const REVIEWS: Review[] = [
   {
     img: "/Rectangle13(4).png",
     name: "Abram Franci",
-    text: "I never remember where I put small things like chargers or documents. Now I just speak and UeyFind tracks everything for me. Love the simplicity!",
+    text: "I never remember where I put small things like chargers or documents. Now I just speak and Stowry tracks everything for me. Love the simplicity!",
     bg: "rgba(255,238,233,0.75)",
     star: "#C17E6A",
     left: "47.7%",

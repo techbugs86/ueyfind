@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Reveal from "./Reveal";
 
-export default function HowItWorks({ title = "How UeyFind Works" }: { title?: string }) {
+export default function HowItWorks({ title = "How Stowry Works" }: { title?: string }) {
   return (
     <section id="how-it-works" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-[1920px] px-5 sm:px-8 lg:px-[110px]">
@@ -10,7 +10,7 @@ export default function HowItWorks({ title = "How UeyFind Works" }: { title?: st
             {title}
           </Reveal>
           <Reveal as="p" delay={120} className="mt-4 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
-            UeyFind makes remembering effortless. Just speak to save anything—items,
+            Stowry makes remembering effortless. Just speak to save anything—items,
             locations, notes, or reminders—and ask again anytime to retrieve it in
             seconds. No searching, no scrolling—just smart, voice-powered recall.
           </Reveal>
@@ -31,7 +31,7 @@ export default function HowItWorks({ title = "How UeyFind Works" }: { title?: st
                   <span className="font-bold text-brand-deep">Save or Find</span>
                 </h3>
                 <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.4cqw)]">
-                  Start by tapping the mic and telling UeyFind what you want to store
+                  Start by tapping the mic and telling Stowry what you want to store
                   or what you&apos;re trying to find. The AI listens, understands your voice
                   naturally, and begins processing your request instantly—no typing
                   needed.
@@ -78,7 +78,7 @@ export default function HowItWorks({ title = "How UeyFind Works" }: { title?: st
                   <span className="font-bold">Results</span>
                 </h3>
                 <p className="mt-3 font-poppins leading-relaxed text-brand-dark/70 text-[max(0.9rem,1.5cqw)]">
-                  Once the information is processed, UeyFind shows a clear, organized
+                  Once the information is processed, Stowry shows a clear, organized
                   result list. You&apos;ll quickly find the exact item or note you saved—no
                   digging, no confusion, just instant clarity.
                 </p>

@@ -6,9 +6,9 @@ import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 
 export const metadata: Metadata = {
-  title: "About Us — UeyFind",
+  title: "About Us — Stowry",
   description:
-    "UeyFind is an AI-first voice assistant that helps you store and retrieve anything in seconds. Learn about our mission, values, and the team behind it.",
+    "Stowry is an AI-first voice assistant that helps you store and retrieve anything in seconds. Learn about our mission, values, and the team behind it.",
 };
 
 const STATS = [
@@ -21,7 +21,7 @@ const STATS = [
 const VALUES = [
   {
     title: "Effortless by design",
-    text: "No menus, no scrolling. You speak, UeyFind remembers. Every interaction is built to take seconds, not minutes.",
+    text: "No menus, no scrolling. You speak, Stowry remembers. Every interaction is built to take seconds, not minutes.",
     tone: "coral" as const,
   },
   {
@@ -36,7 +36,7 @@ const VALUES = [
   },
   {
     title: "Built for real life",
-    text: "Chargers, documents, keys, gifts—UeyFind is designed for the small things that are easy to lose and hard to track.",
+    text: "Chargers, documents, keys, gifts—Stowry is designed for the small things that are easy to lose and hard to track.",
     tone: "mint" as const,
   },
 ];
@@ -47,7 +47,7 @@ export default function AboutPage() {
       <Navbar />
       <PageHeader
         title="The memory layer for your everyday life"
-        subtitle="UeyFind is your AI-first voice assistant that helps you store and retrieve anything in seconds—so you never lose track of what matters."
+        subtitle="Stowry is your AI-first voice assistant that helps you store and retrieve anything in seconds—so you never lose track of what matters."
       />
 
       {/* Mission */}
@@ -63,7 +63,7 @@ export default function AboutPage() {
               Our mission is to make <span className="text-brand-coral">forgetting</span> optional
             </h2>
             <p className="mt-5 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.4vw,1.25rem)]">
-              We started UeyFind with a simple frustration: everyone loses things. Chargers vanish,
+              We started Stowry with a simple frustration: everyone loses things. Chargers vanish,
               documents hide, and the mental load of remembering where everything is never stops.
             </p>
             <p className="mt-4 font-poppins leading-relaxed text-brand-dark/70 text-[clamp(1rem,1.4vw,1.25rem)]">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <div className="relative overflow-hidden rounded-[36px] bg-gradient-to-br from-[#FCEAE6] to-[#E4F7F1] px-8 shadow-[0_30px_70px_rgba(7,48,53,0.12)]" style={{ paddingTop: "20%" }}>
               <Image
                 src="/mockup.png"
-                alt="UeyFind app"
+                alt="Stowry app"
                 width={420}
                 height={860}
                 className="mx-auto h-auto w-full max-w-[400px] drop-shadow-2xl"

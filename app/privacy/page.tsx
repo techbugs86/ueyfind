@@ -6,9 +6,9 @@ import Reveal from "../components/Reveal";
 import DataDeletionForm from "../components/DataDeletionForm";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — UeyFind",
+  title: "Privacy Policy — Stowry",
   description:
-    "How UeyFind collects, uses, and protects your data. Your memories are yours—learn about our privacy commitments.",
+    "How Stowry collects, uses, and protects your data. Your memories are yours—learn about our privacy commitments.",
 };
 
 const SECTIONS = [
@@ -16,7 +16,7 @@ const SECTIONS = [
     title: "1. Information we collect",
     body: [
       "We collect the voice notes and items you choose to store, along with basic account details such as your email address.",
-      "We also collect limited technical data—device type, app version, and usage patterns—to keep UeyFind reliable and to improve recall accuracy.",
+      "We also collect limited technical data—device type, app version, and usage patterns—to keep Stowry reliable and to improve recall accuracy.",
     ],
   },
   {
@@ -29,7 +29,7 @@ const SECTIONS = [
   {
     title: "3. Voice and AI processing",
     body: [
-      "When you speak to UeyFind, your audio is transcribed and interpreted by our AI. Transcripts are tied to your account so retrieval works across sessions.",
+      "When you speak to Stowry, your audio is transcribed and interpreted by our AI. Transcripts are tied to your account so retrieval works across sessions.",
       "You can delete any stored item—and its associated voice data—at any time from within the app.",
     ],
   },
@@ -43,7 +43,7 @@ const SECTIONS = [
   {
     title: "5. Sharing and third parties",
     body: [
-      "We do not sell your personal information. We share data only with service providers who help us operate UeyFind, under strict confidentiality.",
+      "We do not sell your personal information. We share data only with service providers who help us operate Stowry, under strict confidentiality.",
       "We may disclose information if required by law or to protect the safety of our users.",
     ],
   },
@@ -58,7 +58,7 @@ const SECTIONS = [
   {
     title: "7. Changes to this policy",
     body: [
-      "We may update this policy as UeyFind evolves. We'll notify you of material changes through the app or by email.",
+      "We may update this policy as Stowry evolves. We'll notify you of material changes through the app or by email.",
       "Continued use after an update means you accept the revised policy.",
     ],
   },
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
       <Navbar />
       <PageHeader
         title="Your memories are yours"
-        subtitle="We built UeyFind to remember for you—not to profit from your data. Here's exactly how we handle what you store."
+        subtitle="We built Stowry to remember for you—not to profit from your data. Here's exactly how we handle what you store."
       />
 
       <section className="relative overflow-hidden bg-white py-14 sm:py-20 lg:py-24">

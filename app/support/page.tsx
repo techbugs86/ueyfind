@@ -6,17 +6,17 @@ import Reveal from "../components/Reveal";
 import Faq from "../components/Faq";
 
 export const metadata: Metadata = {
-  title: "Support — UeyFind",
+  title: "Support — Stowry",
   description:
-    "Need help with UeyFind? Browse FAQs, reach our team, or send a message. We're here to help you never lose track again.",
+    "Need help with Stowry? Browse FAQs, reach our team, or send a message. We're here to help you never lose track again.",
 };
 
 const CHANNELS = [
   {
     title: "Email us",
     text: "Get a response within 24 hours.",
-    action: "support@ueyfind.app",
-    href: "mailto:support@ueyfind.app",
+    action: "support@stowry.app",
+    href: "mailto:support@stowry.app",
     tone: "coral" as const,
   },
   {
@@ -37,8 +37,8 @@ const CHANNELS = [
 
 const FAQS = [
   {
-    q: "How does UeyFind remember my items?",
-    a: "Just speak. Tell UeyFind what you stored and where—\"the charger is in the bedroom drawer\"—and our AI saves it. When you ask again, it retrieves the exact location in seconds.",
+    q: "How does Stowry remember my items?",
+    a: "Just speak. Tell Stowry what you stored and where—\"the charger is in the bedroom drawer\"—and our AI saves it. When you ask again, it retrieves the exact location in seconds.",
   },
   {
     q: "Is my data private and secure?",
@@ -49,12 +49,12 @@ const FAQS = [
     a: "An internet connection is needed to process voice and sync your memories across devices, so retrieval works anywhere you sign in.",
   },
   {
-    q: "Can I use UeyFind on multiple devices?",
+    q: "Can I use Stowry on multiple devices?",
     a: "Absolutely. Sign in on any supported device and your stored items are available everywhere—on iPhone and Android.",
   },
   {
     q: "Is there a free version?",
-    a: "Yes, UeyFind offers a free plan to get you started. Premium plans unlock unlimited storage and advanced retrieval features.",
+    a: "Yes, Stowry offers a free plan to get you started. Premium plans unlock unlimited storage and advanced retrieval features.",
   },
   {
     q: "How do I delete something I stored?",
@@ -68,7 +68,7 @@ export default function SupportPage() {
       <Navbar />
       <PageHeader
         title="We're here to help"
-        subtitle="Find quick answers, reach our team, or drop us a message. However you need help with UeyFind—we've got you."
+        subtitle="Find quick answers, reach our team, or drop us a message. However you need help with Stowry—we've got you."
       />
 
       {/* Contact channels */}
@@ -111,7 +111,7 @@ export default function SupportPage() {
               Frequently asked <span className="text-brand-coral">questions</span>
             </h2>
             <p className="mt-3 mb-8 font-poppins text-sm leading-relaxed text-brand-dark/60 sm:text-base">
-              Everything you need to know about using UeyFind.
+              Everything you need to know about using Stowry.
             </p>
             <Faq items={FAQS} />
           </Reveal>

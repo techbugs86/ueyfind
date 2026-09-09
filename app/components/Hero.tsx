@@ -30,12 +30,12 @@ export default function Hero() {
         <Reveal as="h1" className="font-poppins font-bold leading-tight text-white text-[clamp(2rem,6vw,5.33rem)]">
           Never Lose Track Again
           <br />
-          Just Ask UeyFind
+          Just Ask Stowry
         </Reveal>
 
         <Reveal as="p" delay={120} className="max-w-4xl font-poppins font-light text-white/85 text-[clamp(1rem,1.6vw,1.5rem)]">
-          UeyFind is your AI-first voice assistant that helps you store and
-          retrieve anything in seconds. Just speak, and let UeyFind remember for
+          Stowry is your AI-first voice assistant that helps you store and
+          retrieve anything in seconds. Just speak, and let Stowry remember for
           you—never lose track of your important items again
         </Reveal>
 
@@ -75,7 +75,7 @@ export default function Hero() {
         <Reveal variant="scale" className="relative z-10 w-full">
           <Image
             src="/mockup.png"
-            alt="UeyFind app on iPhone"
+            alt="Stowry app on iPhone"
             width={340}
             height={690}
             priority

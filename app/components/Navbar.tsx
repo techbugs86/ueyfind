@@ -28,8 +28,8 @@ export default function Navbar() {
       <nav className="animate-drop mx-auto flex max-w-[1920px] items-center justify-between px-5 py-6 sm:px-10 sm:py-8 lg:px-[110px] lg:py-12">
         <Link href="/" className="flex items-center">
           <Image
-            src="/image.png"
-            alt="UeyFind"
+            src="/stowry-logo.png"
+            alt="Stowry"
             width={64}
             height={64}
             className="h-10 w-auto sm:h-14 lg:h-[100px]"

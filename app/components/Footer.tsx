@@ -10,13 +10,13 @@ export default function Footer() {
           <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-12 2xl:gap-24">
             <div className="flex min-w-0 flex-col gap-5 lg:flex-1 lg:gap-[21px]">
               <h2 className="font-poppins font-semibold leading-tight text-white text-[clamp(2rem,3.6vw,4rem)] 2xl:leading-[96px]">
-                Join the UeyFind
+                Join the Stowry
                 <br />
                 Community Updates
               </h2>
               <p className="font-poppins text-base font-light leading-relaxed text-white lg:text-2xl lg:leading-9">
                 Stay connected with the latest features, updates, and announcements
-                from UeyFind. Be the first to know what&apos;s new and never miss an
+                from Stowry. Be the first to know what&apos;s new and never miss an
                 upgrade to your experience.
               </p>
             </div>
@@ -52,8 +52,8 @@ export default function Footer() {
           {/* Logo and Text */}
           <div className="flex flex-col gap-5 lg:gap-[21px]">
             <Image
-              src="/image.png"
-              alt="UeyFind"
+              src="/stowry-logo.png"
+              alt="Stowry"
               width={92}
               height={92}
               className="h-[90px] lg:h-[85px]"
@@ -61,10 +61,10 @@ export default function Footer() {
             <p className="font-poppins text-xl font-semibold leading-snug text-white lg:text-[32px] lg:leading-[48px]">
               Stop Forgetting. Start Asking.
               <br />
-              UeyFind Finds What You Need—Fast.
+              Stowry Finds What You Need—Fast.
             </p>
             <p className="font-poppins text-base text-white lg:text-[21px] lg:leading-8">
-              UeyFind, 2026.
+              Stowry, 2026.
             </p>
           </div>
 
@@ -74,8 +74,8 @@ export default function Footer() {
               <div className="flex items-center gap-4">
                 <span className="flex h-[53px] w-[53px] shrink-0 items-center justify-center overflow-hidden rounded-full bg-[linear-gradient(148.32deg,#8FECD9_3.09%,#558C93_103.42%)]">
                   <Image
-                    src="/image.png"
-                    alt="UeyFind"
+                    src="/stowry-logo.png"
+                    alt="Stowry"
                     width={37}
                     height={37}
                     className="w-auto"
@@ -84,10 +84,10 @@ export default function Footer() {
                 </span>
                 <div className="flex flex-col gap-0.5">
                   <p className="font-poppins text-lg font-medium leading-7 text-white">
-                    Team UeyFind
+                    Team Stowry
                   </p>
                   <p className="font-poppins text-base leading-6 text-white/80">
-                    @UeyFindapp
+                    @Stowryapp
                   </p>
                 </div>
               </div>
@@ -97,7 +97,7 @@ export default function Footer() {
             </div>
             <p className="mt-6 font-poppins text-lg leading-[27px] text-white">
               We&apos;re just announced new feature that would help you increase your
-              experience of using UeyFind!
+              experience of using Stowry!
             </p>
           </div>
         </Reveal>
@@ -107,7 +107,7 @@ export default function Footer() {
       <div className="relative inset-x-0 bottom-0 bg-brand-mint lg:absolute lg:h-[117px]">
         <div className="mx-auto flex h-full max-w-[1920px] flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row sm:py-8 lg:px-[106px]">
           <p className="font-poppins text-sm text-brand-dark lg:text-[18px] lg:leading-7">
-            © 2026 UeyFind. All rights reserved.
+            © 2026 Stowry. All rights reserved.
           </p>
           <div className="flex items-center gap-[21px]">
             <SocialIcon label="Instagram">
